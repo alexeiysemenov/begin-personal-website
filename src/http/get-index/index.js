@@ -1,26 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<script>
+info="<!DOCTYPE html>
+<html lang=&#34;en&#34;>
 <head>
-    <meta charset="UTF-8">
+    <meta charset=&#34;UTF-8&#34;>
     <title>Title</title>
 </head>
 <body>
-<div class="something" style=" height:100vh; background: url('https://i.stack.imgur.com/sxAz0.jpg')">
+<div class=&#34;something&#34; style=&#34; height:100vh; background: url(&#39;https://i.stack.imgur.com/sxAz0.jpg&#39;)&#34;>
     sdfsdfas sadfa sdf sad asdf asdf sadf as fd sdfsdfas sadfa sdf sad asdf asdf sadf as fdsdfsdfas sadfa sdf sad asdf
     asdf sadf as fdsdfsdfas sadfa sdf sad asdf asdf sadf as fdsdfsdfas sadfa sdf sad asdf asdf sadf as fdsdfsdfas sadfa
     sdf sad asdf asdf sadf as fdsdfsdfas sadfa sdf sad asdf asdf sadf as fd
     <!--Копировать отсюда-->
-    <div class="popup_holder">
-        <div class="blur"></div>
-        <div class="popup_info_container">
-            <div class="popup_info_holder">
-                <h2 class="popup_header">Some important questions?</h2>
-                <p class="popup_description">Should i press the button or not</p>
-                <div class="popup_container">
-                    <!--<a class="popup_button popup_button-yes" href="/somewhere">Yes</a>-->
-                    <!--<a class="popup_button popup_button-no" href="/somewhere_else">No</a>-->
+    <div class=&#34;popup_holder&#34;>
+        <div class=&#34;blur&#34;></div>
+        <div class=&#34;popup_info_container&#34;>
+            <div class=&#34;popup_info_holder&#34;>
+                <h2 class=&#34;popup_header&#34;>Some important questions?</h2>
+                <p class=&#34;popup_description&#34;>Should i press the button or not</p>
+                <div class=&#34;popup_container&#34;>
+                    <!--<a class=&#34;popup_button popup_button-yes&#34; href=&#34;/somewhere&#34;>Yes</a>-->
+                    <!--<a class=&#34;popup_button popup_button-no&#34; href=&#34;/somewhere_else&#34;>No</a>-->
                     <!--Большая кнопка-->
-                    <a class="popup_button popup_button-big" href="/somewhere_else">YES</a>
+                    <a class=&#34;popup_button popup_button-big&#34; href=&#34;/somewhere_else&#34;>YES</a>
                 </div>
             </div>
         </div>
@@ -100,20 +101,16 @@
             background: rgba(0, 0, 0, 0.95);
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js&#34;></script>
     <script>
 
         $(document).ready(function(){
-            var strGET = window.location.search.replace( '?', '');
-            var strSetup = "user_true";
+            var strGET = window.location.search.replace( &#39;?&#39;, &#39;&#39;);
+            var strSetup = &#34;user_true&#34;;
             if(!strGET.includes(strSetup)){
-             $(".popup_holder").css("display","flex");}
+             $(&#34;.popup_holder&#34;).css(&#34;display&#34;,&#34;flex&#34;);}
             else {
                 console.log(1);
             }
         });
     </script>
-    <!--Копировать досюда-->
-</div>
-</body>
-</html>
