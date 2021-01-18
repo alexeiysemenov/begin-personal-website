@@ -1,116 +1,117 @@
-<script>
-info="<!DOCTYPE html>
-<html lang=&#34;en&#34;>
-<head>
-    <meta charset=&#34;UTF-8&#34;>
-    <title>Title</title>
-</head>
-<body>
-<div class=&#34;something&#34; style=&#34; height:100vh; background: url(&#39;https://i.stack.imgur.com/sxAz0.jpg&#39;)&#34;>
-    sdfsdfas sadfa sdf sad asdf asdf sadf as fd sdfsdfas sadfa sdf sad asdf asdf sadf as fdsdfsdfas sadfa sdf sad asdf
-    asdf sadf as fdsdfsdfas sadfa sdf sad asdf asdf sadf as fdsdfsdfas sadfa sdf sad asdf asdf sadf as fdsdfsdfas sadfa
-    sdf sad asdf asdf sadf as fdsdfsdfas sadfa sdf sad asdf asdf sadf as fd
-    <!--Копировать отсюда-->
-    <div class=&#34;popup_holder&#34;>
-        <div class=&#34;blur&#34;></div>
-        <div class=&#34;popup_info_container&#34;>
-            <div class=&#34;popup_info_holder&#34;>
-                <h2 class=&#34;popup_header&#34;>Some important questions?</h2>
-                <p class=&#34;popup_description&#34;>Should i press the button or not</p>
-                <div class=&#34;popup_container&#34;>
-                    <!--<a class=&#34;popup_button popup_button-yes&#34; href=&#34;/somewhere&#34;>Yes</a>-->
-                    <!--<a class=&#34;popup_button popup_button-no&#34; href=&#34;/somewhere_else&#34;>No</a>-->
-                    <!--Большая кнопка-->
-                    <a class=&#34;popup_button popup_button-big&#34; href=&#34;/somewhere_else&#34;>YES</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <style>
-        .popup_holder * {
-            text-decoration: none;
-        }
-        .popup_holder {
-            z-index: 9999;
-            display: none;
-            /*display: flex;*/
-            position: fixed;
-            top:0;
-            left:0;
-            height: 100vh;
-            width: 100%;
-            backdrop-filter:blur(5px);
-            justify-content: center;
-            align-items: center;
-        }
-        .popup_info_holder {
-            min-width: 300px;
-            width: 50%;
-            padding: 20px;
-            padding-bottom: 40px;
-            background: #ffffff;
-            text-align: center;
-            border: 5px solid #8A8A8A;
-        }
-        .popup_container {
-            z-index: 100;
-            display: flex;
-            justify-content: space-around;
-            padding-top: 40px;
-        }
-        .popup_button {
-            padding:10px 30px;
-            min-width: 100px;
-            background: #e60505;
-            border: none;
-            font-family: Lato;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 24px;
-            text-align: center;
-            color: #FAFAFF;
-            border-radius: 5px;;
-        }
-        .popup_button-big {
-            padding:20px 40px;
-        }
-        .popup_button-yes {
-            background: #6be67e;
-        }
-        .popup_button-no {
-            background: #e60505;
-        }
-        .popup_info_container {
-            z-index: 100;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left:0;
-            top:0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .blur {
-            z-index: 80;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            background: rgba(0, 0, 0, 0.95);
-        }
-    </style>
-    <script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js&#34;></script>
-    <script>
-
-        $(document).ready(function(){
-            var strGET = window.location.search.replace( &#39;?&#39;, &#39;&#39;);
-            var strSetup = &#34;user_true&#34;;
-            if(!strGET.includes(strSetup)){
-             $(&#34;.popup_holder&#34;).css(&#34;display&#34;,&#34;flex&#34;);}
-            else {
-                console.log(1);
-            }
-        });
-    </script>
+document.write( '<html lang=\"en\">\n' );
+document.write( '<head>\n' );
+document.write( '    <meta charset=\"UTF-8\">\n' );
+document.write( '    <title>Title</title>\n' );
+document.write( '</head>\n' );
+document.write( '<body>\n' );
+document.write( '<div class=\"something\" style=\" height:100vh; background: url(\'https://i.stack.imgur.com/sxAz0.jpg\')\">\n' );
+document.write( '    sdfsdfas sadfa sdf sad asdf asdf sadf as fd sdfsdfas sadfa sdf sad asdf asdf sadf as fdsdfsdfas sadfa sdf sad asdf\n' );
+document.write( '    asdf sadf as fdsdfsdfas sadfa sdf sad asdf asdf sadf as fdsdfsdfas sadfa sdf sad asdf asdf sadf as fdsdfsdfas sadfa\n' );
+document.write( '    sdf sad asdf asdf sadf as fdsdfsdfas sadfa sdf sad asdf asdf sadf as fd\n' );
+document.write( '    <!--Копировать отсюда-->\n' );
+document.write( '    <div class=\"popup_holder\">\n' );
+document.write( '        <div class=\"blur\"></div>\n' );
+document.write( '        <div class=\"popup_info_container\">\n' );
+document.write( '            <div class=\"popup_info_holder\">\n' );
+document.write( '                <h2 class=\"popup_header\">Some important questions?</h2>\n' );
+document.write( '                <p class=\"popup_description\">Should i press the button or not</p>\n' );
+document.write( '                <div class=\"popup_container\">\n' );
+document.write( '                    <!--<a class=\"popup_button popup_button-yes\" href=\"/somewhere\">Yes</a>-->\n' );
+document.write( '                    <!--<a class=\"popup_button popup_button-no\" href=\"/somewhere_else\">No</a>-->\n' );
+document.write( '                    <!--Большая кнопка-->\n' );
+document.write( '                    <a class=\"popup_button popup_button-big\" href=\"/somewhere_else\">YES</a>\n' );
+document.write( '                </div>\n' );
+document.write( '            </div>\n' );
+document.write( '        </div>\n' );
+document.write( '    </div>\n' );
+document.write( '    <style>\n' );
+document.write( '        .popup_holder * {\n' );
+document.write( '            text-decoration: none;\n' );
+document.write( '        }\n' );
+document.write( '        .popup_holder {\n' );
+document.write( '            z-index: 9999;\n' );
+document.write( '            display: none;\n' );
+document.write( '            /*display: flex;*/\n' );
+document.write( '            position: fixed;\n' );
+document.write( '            top:0;\n' );
+document.write( '            left:0;\n' );
+document.write( '            height: 100vh;\n' );
+document.write( '            width: 100%;\n' );
+document.write( '            backdrop-filter:blur(5px);\n' );
+document.write( '            justify-content: center;\n' );
+document.write( '            align-items: center;\n' );
+document.write( '        }\n' );
+document.write( '        .popup_info_holder {\n' );
+document.write( '            min-width: 300px;\n' );
+document.write( '            width: 50%;\n' );
+document.write( '            padding: 20px;\n' );
+document.write( '            padding-bottom: 40px;\n' );
+document.write( '            background: #ffffff;\n' );
+document.write( '            text-align: center;\n' );
+document.write( '            border: 5px solid #8A8A8A;\n' );
+document.write( '        }\n' );
+document.write( '        .popup_container {\n' );
+document.write( '            z-index: 100;\n' );
+document.write( '            display: flex;\n' );
+document.write( '            justify-content: space-around;\n' );
+document.write( '            padding-top: 40px;\n' );
+document.write( '        }\n' );
+document.write( '        .popup_button {\n' );
+document.write( '            padding:10px 30px;\n' );
+document.write( '            min-width: 100px;\n' );
+document.write( '            background: #e60505;\n' );
+document.write( '            border: none;\n' );
+document.write( '            font-family: Lato;\n' );
+document.write( '            font-style: normal;\n' );
+document.write( '            font-weight: bold;\n' );
+document.write( '            font-size: 24px;\n' );
+document.write( '            text-align: center;\n' );
+document.write( '            color: #FAFAFF;\n' );
+document.write( '            border-radius: 5px;;\n' );
+document.write( '        }\n' );
+document.write( '        .popup_button-big {\n' );
+document.write( '            padding:20px 40px;\n' );
+document.write( '        }\n' );
+document.write( '        .popup_button-yes {\n' );
+document.write( '            background: #6be67e;\n' );
+document.write( '        }\n' );
+document.write( '        .popup_button-no {\n' );
+document.write( '            background: #e60505;\n' );
+document.write( '        }\n' );
+document.write( '        .popup_info_container {\n' );
+document.write( '            z-index: 100;\n' );
+document.write( '            position: absolute;\n' );
+document.write( '            width: 100%;\n' );
+document.write( '            height: 100%;\n' );
+document.write( '            left:0;\n' );
+document.write( '            top:0;\n' );
+document.write( '            display: flex;\n' );
+document.write( '            justify-content: center;\n' );
+document.write( '            align-items: center;\n' );
+document.write( '        }\n' );
+document.write( '        .blur {\n' );
+document.write( '            z-index: 80;\n' );
+document.write( '            position: absolute;\n' );
+document.write( '            width: 100%;\n' );
+document.write( '            height: 100%;\n' );
+document.write( '            left: 0;\n' );
+document.write( '            top: 0;\n' );
+document.write( '            background: rgba(0, 0, 0, 0.95);\n' );
+document.write( '        }\n' );
+document.write( '    </style>\n' );
+document.write( '    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js\"></script>\n' );
+document.write( '    <script>\n' );
+document.write( '\n' );
+document.write( '        $(document).ready(function(){\n' );
+document.write( '            var strGET = window.location.search.replace( \'?\', \'\');\n' );
+document.write( '            var strSetup = \"user_true\";\n' );
+document.write( '            if(!strGET.includes(strSetup)){\n' );
+document.write( '             $(\".popup_holder\").css(\"display\",\"flex\");}\n' );
+document.write( '            else {\n' );
+document.write( '                console.log(1);\n' );
+document.write( '            }\n' );
+document.write( '        });\n' );
+document.write( '    </script>\n' );
+document.write( '   </div>\n' );
+document.write( '</body>\n' );
+document.write( '</html>' );
